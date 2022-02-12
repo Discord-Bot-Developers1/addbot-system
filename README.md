@@ -1,5 +1,4 @@
-![wp4605390](https://user-images.githubusercontent.com/99521910/153701293-16e9aaca-2e99-4b54-8da9-ba5b27b2b8e8.jpg)
-
+![image png](https://user-images.githubusercontent.com/99521910/153701320-426f49d2-84b8-4e1d-a71d-62e35f822a1f.jpeg)
 # ADDBOT SYSTEM (AOI.JS)
 > Addbot system is made using aoi.js [aoi.js](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazJFYTF0NTNXa0J6d3ZuUE8yTFFqandUeGVYd3xBQ3Jtc0tsa1ItTFVkeE02SEJqcm51T1ozMHhRbW9kS0Qzd2htYTQzajMtSDNuM2NRNTJ6ZUh1MnVXa1BPTzc2VVB6V1JqdkFEX3BzS0d1N1Ixb3RYVGE1YWp0ZlNiejlOX0ZGb3E2eEU4RnROMDVuYzdtbzNQOA&q=https%3A%2F%2Fgithub.com%2FAkaruiDevelopment%2Faoi.js%23readme)
 
