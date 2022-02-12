@@ -36,6 +36,7 @@ Type (npm i aoi.js) in shell.
 ## 📝 Features & Commands
 
 > Note: The default prefix is '!'
+
 `/addbot <client id> <client prefix>`
 
 `/accept <client id>`
