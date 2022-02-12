@@ -5,50 +5,60 @@ name: "accept",
 aliases: ["approve"],
 description: "Accept a bot with ID.",
  usage: "accept <bot id>",
- category: "Bot Reviewer",
-  code:`$onlyIf[$memberExists[$getServerVar[botID]]==true;{newEmbed:{author:Error 344}{description::x: Hey you, $userTag that bot you were trying to accept is **not here** make sure you add it before trying to accept.}{color:RED}{footer:Error 344}{timestamp}}]
+ category: "Staff",
+  code:`$onlyIf[$memberExists[$message[1]]==true;{newEmbed:{author:Error Code 1038}{description::x: Hey you, $userTag that bot you were trying to accept is **not here** make sure you add it before trying to accept.}{color:RED}{footer:Error 1038}{timestamp}}]
 
-  $changeNickname[$message[1];$getServerVar[botPrefix] | $username[$message[1]]]
+$giveRoles[your server id;$message[1];members bot role id]
 
-$sendDm[{newEmbed:{author:🎉 Accepted 🎉:https://media.discordapp.net/attachments/894178629339213854/932134910590869512/Picsart_22-01-16_11-35-14-110.jpg?width=473&height=473}{description:Your bot <@$message[1]> has been approved on $serverName[765789714384814120] :tada:!}{color:GREEN}{timestamp}};$getServerVar[ownerIDB]]   
-
-$giveRoles[765789714384814120;$message[1];932135313852207124]
-
-$wait[1s]
-
-$giveRoles[765789714384814120;$getServerVar[ownerIDB];933199754052116510]
-
-$takeRoles[765789714384814120;$message[1];932135705390510132]
-
-<@$getServerVar[ownerIDB]>
+$takeRoles[your server id;$message[1];your unaccpected bot role id]
 
 $author[1;Bot Accepted] 
 
-$addField[1;Reviewer;$username[$authorID] ([DBD profile](https#COLON#//discord.com/users/$authorID))] 
+$addField[1;Staff;$username[$authorID] ([User Profile](https://discord.gg/kkhazwM66M))] 
 
 $addField[1;Bot;$userTag[$message[1]] ($message[1])]
 
 $channelSendMessage[$channelID;Accepted bot.]
 
-$wait[1s]
-
-$channelSendMessage[932133521810669639;{newEmbed:{author:A bot has been accepted.}{description:
-◻️ **Member:** $usertag[$message[1]] ($message[1]) [<@$message[1]>]
-
-*Note: Do not review the bot again once it's already a accepted.*
-
-**Details:**
-◻️ **Member given the role:** Yes
-◻️ **Member is kick:** No}{color:BLUE}}]
-
 $color[1;#589AFE]
 
-$useChannel[923178961779965952]
+$useChannel[your bot log channel id]
 
-$onlyIf[$message[1]!=;{newEmbed:{author:$userTag:$authorAvatar}{description:Add a botID. Do this (Eg. \`!accept <bot id>)\`.}{footer:Error}{color:WHITE}{timestamp}}
+$onlyIf[$message[1]!=;Add a botID. Do this (Eg. \`!accept <bot id>)\`.]
 
-$onlyForServers[765789714384814120;]
+$onlyForServers[your server id;]
 
-$onlyForRoles[787254365684498443;934404587530621049;]`
+$onlyForRoles[your staff role id;]`
+
+};
+
+accept.js (edited)
+[11:22 AM]
+module.exports = {
+
+  name: "decline",
+
+  aliases: ["disapprove"],
+description: "Decline a bot with reason and ID.",
+ usage: "decline <bot id> <reason>",
+ category: "Bot Reviewer",
+  code: `
+$channelSendMessage[your bot log channel id;{newEmbed:{author:Bot Declined}{field:Bot:$userTag[$message[1]] ($message[1])}{field:Staff:$username[$authorID] ([DBD profile](https://discord.gg/kkhazwM66M))}{field:Reason:$message[2] $message[3] $message[4] $message[5] $message[6] $message[7] $message[8] $message[9] $message[10] $message[11] $message[12] $message[13] $message[14] $message[15] $message[16] $message[17] $message[18] $message[19] $message[20] $message[21] $message[22] $message[23] $message[24] $message[25] $message[26] $message[27] $message[28] $message[29] $message[30] $message[31] $message[32] $message[33] $message[34] $message[35] $message[36] $message[37] $message[38] $message[39] $message[40] $message[41] $message[42] $message[43] $message[44] $message[45]}{color:#589AFE}}]
+
+$wait[1s]
+
+$kick[$message[1];your server id;Bot is declined by: $usertag[$authorID] ($authorID)]
+
+$channelSendMessage[$channelID;Declined Bot and kicked the bot.]
+
+$onlyIf[$memberExists[$message[1]]==true;{newEmbed:{author:Error Code 1038}{description:❌ Hey you, $userTag that bot you were trying to decline is **not here** make sure you add it before trying to decline.}{color:RED}{footer:Error 1038}{timestamp}}]
+
+$onlyIf[$message[2]!=;Add a botID & reason. Do this (Eg. \`!decline 822042673451630614 Help command is not working.\`).]
+
+$suppressErrors[Error, contact Zedge#9417 for this.]
+
+$onlyForServers[your server id;]
+
+$onlyForRoles[your staff role id;]`
 
 };
