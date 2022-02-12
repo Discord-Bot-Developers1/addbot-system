@@ -44,4 +44,4 @@ Type (npm i aoi.js) in shell.
 
 [![Run on Repl.it](https://repl.it/badge/github/Discord-Bot-Developers1/addbot-system)](https://repl.it/github/Discord-Bot-Developers1/addbot-system)
 
-Main Credits go to [Zedge#9417](https://)
+Main Credits go to [Zedge#9417](https://discord.gg/kkhazwM66M)
