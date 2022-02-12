@@ -6,7 +6,7 @@
 ## Installation
 
 1. How to obtain a Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)** 
-2. Put your token safe**
+2. Put your token safe
 3. Node.js v12.0.0 or newer
 
 ---
