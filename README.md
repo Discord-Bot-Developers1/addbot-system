@@ -3,4 +3,7 @@
 The addbot system beta made by DBD Team.
 # YouTube Channel
 Subscribe on our channel https://youtu.be/BqGq9MqDoxY
-
+# Setting up
+- Clone the project in replit.
+- Put your bot token in **token: "your bot token"**
+- **<@&staff role id>** Put your staff role id here.
