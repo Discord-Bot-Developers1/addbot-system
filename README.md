@@ -1,12 +1,12 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/eritislami/evobot)
 
-# 🎵 ProMusic (Discord Music Bot)
-> ProMusic is a bot made using discord.js [discordjs.guide](https://discordjs.guide)
+# ADDBOT SYSTEM (AOI.JS)
+> Addbot system is made using aoi.js [aoi.js](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazJFYTF0NTNXa0J6d3ZuUE8yTFFqandUeGVYd3xBQ3Jtc0tsa1ItTFVkeE02SEJqcm51T1ozMHhRbW9kS0Qzd2htYTQzajMtSDNuM2NRNTJ6ZUh1MnVXa1BPTzc2VVB6V1JqdkFEX3BzS0d1N1Ixb3RYVGE1YWp0ZlNiejlOX0ZGb3E2eEU4RnROMDVuYzdtbzNQOA&q=https%3A%2F%2Fgithub.com%2FAkaruiDevelopment%2Faoi.js%23readme)
 
 ## Installation
 
 1. How to obtain a Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)** 
-2. SoundCloud doesn't provide API anymore**
+2. Put your token safe**
 3. Node.js v12.0.0 or newer
 
 ---
