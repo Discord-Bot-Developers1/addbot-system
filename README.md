@@ -41,7 +41,7 @@ Type (npm i aoi.js) in shell.
 
 `accept <client id>`
 
-`decline <client id> <prefix>`
+`decline <client id> <reason>`
 
 [![Run on Repl.it](https://repl.it/badge/github/Discord-Bot-Developers1/addbot-system)](https://repl.it/github/Discord-Bot-Developers1/addbot-system)
 
