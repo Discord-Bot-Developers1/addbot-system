@@ -37,11 +37,11 @@ Type (npm i aoi.js) in shell.
 
 > Note: The default prefix is '!'
 
-`/addbot <client id> <client prefix>`
+`addbot <client id> <client prefix>`
 
-`/accept <client id>`
+`accept <client id>`
 
-`/decline <client id> <prefix>`
+`decline <client id> <prefix>`
 
 [![Run on Repl.it](https://repl.it/badge/github/Discord-Bot-Developers1/addbot-system)](https://repl.it/github/Discord-Bot-Developers1/addbot-system)
 
